@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RushBurger | Fast Food Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">
+          <span class="brand-mark">RB</span>
+          <div>
+            <p>RushBurger</p>
+            <span>Hot meals in under 30 minutes</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <a href="#menu" class="ghost-link">Browse menu</a>
+          <a href="#checkout" class="order-btn">Order now</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Online Fast Food Ordering</p>
+          <h1>Crave-worthy burgers, fries, wraps, and shakes.</h1>
+          <p class="hero-text">
+            Build your meal, add it to the cart, and place your order in a few taps.
+            Fresh kitchen picks, bold flavors, and instant totals.
+          </p>
+          <div class="hero-cta">
+            <a href="#menu" class="order-btn">Start your order</a>
+            <div class="rating-card">
+              <strong>4.9/5</strong>
+              <span>Rated by 12k hungry customers</span>
+            </div>
+          </div>
+          <ul class="hero-points">
+            <li>Free delivery over $25</li>
+            <li>Custom extras on every item</li>
+            <li>Live cart total</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="deal-card">
+            <span>Combo Deal</span>
+            <h2>Zinger Burger + Fries + Cola</h2>
+            <p>$14.50 today</p>
+          </div>
+          <div class="plate plate-burger"></div>
+          <div class="plate plate-fries"></div>
+          <div class="floating-badge">Fast pickup</div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="highlights">
+        <article>
+          <h3>Lightning Delivery</h3>
+          <p>Average dispatch time under 15 minutes for nearby orders.</p>
+        </article>
+        <article>
+          <h3>Fresh Ingredients</h3>
+          <p>Crispy chicken, seasoned beef, golden fries, and handmade sauces.</p>
+        </article>
+        <article>
+          <h3>Easy Checkout</h3>
+          <p>Transparent prices, taxes, delivery fee, and total in one place.</p>
+        </article>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Popular Picks</p>
+            <h2>Pick your favorites</h2>
+          </div>
+          <div class="filter-bar" id="filterBar"></div>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </section>
+
+      <section class="checkout-section" id="checkout">
+        <div class="checkout-copy">
+          <p class="eyebrow">Quick Checkout</p>
+          <h2>Your order, ready to go</h2>
+          <p>
+            Review your cart, update quantities, and complete your fast-food order in seconds.
+          </p>
+          <form class="checkout-form">
+            <label>
+              Full name
+              <input type="text" placeholder="Alex Carter">
+            </label>
+            <label>
+              Delivery address
+              <input type="text" placeholder="221B Food Street">
+            </label>
+            <label>
+              Phone number
+              <input type="tel" placeholder="+1 555 0102">
+            </label>
+            <button type="button" class="order-btn wide-btn" id="placeOrderBtn">Place order</button>
+          </form>
+        </div>
+
+        <aside class="cart-panel">
+          <div class="cart-header">
+            <div>
+              <p class="eyebrow">Live Cart</p>
+              <h3>Order summary</h3>
+            </div>
+            <span class="cart-count" id="cartCount">0 items</span>
+          </div>
+          <div class="cart-items" id="cartItems">
+            <p class="empty-state">Your cart is empty. Add something delicious.</p>
+          </div>
+          <div class="cart-totals">
+            <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+            <div><span>Delivery</span><strong id="delivery">$4.50</strong></div>
+            <div><span>Tax</span><strong id="tax">$0.00</strong></div>
+            <div class="grand-total"><span>Total</span><strong id="total">$4.50</strong></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast">Order placed successfully.</div>
+  <script src="script.js"></script>
+</body>
+</html>

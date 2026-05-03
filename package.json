@@ -1,0 +1,19 @@
+{
+  "name": "fast-food-system-mern",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend && npm install --prefix mobile",
+    "start": "npm run dev",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:mobile": "npm run start --prefix mobile",
+    "dev:server": "npm run dev:backend",
+    "dev:client": "npm run dev:frontend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

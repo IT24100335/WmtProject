@@ -1,0 +1,64 @@
+<svg width="800" height="620" viewBox="0 0 800 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="113" y1="72" x2="686" y2="554" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A1512"/>
+      <stop offset="1" stop-color="#0F0A09"/>
+    </linearGradient>
+    <linearGradient id="bunTop" x1="178" y1="110" x2="586" y2="303" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD46A"/>
+      <stop offset="1" stop-color="#FF9D34"/>
+    </linearGradient>
+    <linearGradient id="bunBottom" x1="195" y1="326" x2="579" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C96A1B"/>
+      <stop offset="1" stop-color="#8C4210"/>
+    </linearGradient>
+    <linearGradient id="patty" x1="212" y1="236" x2="556" y2="373" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B261C"/>
+      <stop offset="1" stop-color="#28110C"/>
+    </linearGradient>
+    <linearGradient id="fries" x1="601" y1="129" x2="741" y2="414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD75C"/>
+      <stop offset="1" stop-color="#FF9D34"/>
+    </linearGradient>
+    <filter id="shadow" x="80" y="60" width="640" height="520" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+  </defs>
+  <rect width="800" height="620" rx="40" fill="url(#bg)"/>
+  <ellipse cx="402" cy="352" rx="250" ry="160" fill="#FF5D3D" opacity="0.16" filter="url(#shadow)"/>
+  <circle cx="148" cy="128" r="22" fill="#FF8D56" opacity="0.45"/>
+  <circle cx="670" cy="96" r="16" fill="#FFD56B" opacity="0.35"/>
+  <circle cx="720" cy="470" r="28" fill="#FF5D3D" opacity="0.24"/>
+  <g transform="translate(130 90)">
+    <path d="M96 112C96 63.3989 150.876 24 218.5 24H321.5C389.124 24 444 63.3989 444 112H96Z" fill="url(#bunTop)"/>
+    <path d="M112 127H428C445.673 127 460 141.327 460 159V186C460 203.673 445.673 218 428 218H112C94.3269 218 80 203.673 80 186V159C80 141.327 94.3269 127 112 127Z" fill="#FFCE63"/>
+    <rect x="92" y="186" width="368" height="86" rx="43" fill="url(#patty)"/>
+    <path d="M96 266H456C456 313.495 404.712 352 341.5 352H210.5C147.288 352 96 313.495 96 266Z" fill="#7C3B22"/>
+    <path d="M92 348C92 315.909 123.909 290 163.5 290H388.5C428.091 290 460 315.909 460 348V358C460 389.723 432.833 415 399.5 415H152.5C119.167 415 92 389.723 92 358V348Z" fill="url(#bunBottom)"/>
+    <path d="M129 160C182 115 238 109 292 154" stroke="#7BC96F" stroke-width="20" stroke-linecap="round"/>
+    <path d="M208 150C269 113 331 116 394 154" stroke="#4FB86A" stroke-width="20" stroke-linecap="round"/>
+    <path d="M152 235C194 205 239 199 287 232" stroke="#F6E27A" stroke-width="16" stroke-linecap="round"/>
+    <path d="M246 232C286 203 334 199 380 227" stroke="#F6E27A" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="186" cy="178" r="10" fill="#F4F4EF"/>
+    <circle cx="225" cy="172" r="10" fill="#F4F4EF"/>
+    <circle cx="266" cy="170" r="10" fill="#F4F4EF"/>
+    <circle cx="314" cy="170" r="10" fill="#F4F4EF"/>
+    <circle cx="356" cy="176" r="10" fill="#F4F4EF"/>
+    <circle cx="397" cy="184" r="10" fill="#F4F4EF"/>
+    <path d="M140 116C169 90 212 78 262 78C312 78 354 90 388 116" stroke="#FFF4C7" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+  </g>
+  <g transform="translate(588 186)">
+    <path d="M0 0H84L62 182H22L0 0Z" fill="url(#fries)"/>
+    <path d="M14 -8L28 150L38 150L28 -8H14Z" fill="#FFEAB0"/>
+    <path d="M36 -18L50 146H60L52 -18H36Z" fill="#FFF4CC"/>
+    <path d="M58 10L72 160H82L76 10H58Z" fill="#FDE08B"/>
+    <path d="M-10 186H96L104 216H-18L-10 186Z" fill="#D94A2E"/>
+  </g>
+  <g transform="translate(78 430)">
+    <rect x="0" y="0" width="244" height="94" rx="28" fill="rgba(255,255,255,0.08)"/>
+    <circle cx="58" cy="47" r="24" fill="#FF8D56"/>
+    <path d="M46 47L56 57L71 39" stroke="#1B120F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="98" y="41" fill="#FFF7F0" font-family="Arial, sans-serif" font-size="22" font-weight="700">Freshly cooked</text>
+    <text x="98" y="68" fill="#D7B9AA" font-family="Arial, sans-serif" font-size="16">Hot burgers, pizza, fries</text>
+  </g>
+</svg>
