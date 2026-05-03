@@ -44,6 +44,10 @@ export function createApp() {
     res.json({ status: "ok" });
   });
 
+  app.get("/", (_req, res) => {
+    res.send("Welcome to the Crave Bites API! The server is running successfully.");
+  });
+
   app.use("/api/auth", authRoutes);
   app.use("/api/users", userRoutes);
   app.use("/api/menu", menuRoutes);
