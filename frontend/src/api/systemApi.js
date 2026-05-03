@@ -1,6 +1,6 @@
 import { request } from "./index";
 
-const apiBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const apiBaseUrl = import.meta.env.VITE_API_URL || "https://wmtproject.onrender.com/api";
 
 export const systemApi = {
   menu: () => request("/menu"),

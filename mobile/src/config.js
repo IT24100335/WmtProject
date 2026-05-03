@@ -12,7 +12,6 @@ const getLocalHostUrl = () => {
 
 export const API_BASE_URL =
   process.env.EXPO_PUBLIC_API_URL ||
-  getLocalHostUrl() ||
-  "http://172.28.12.112:5001/api";
+  "https://wmtproject.onrender.com/api";
 
 export const APP_NAME = "Crave Bites";
